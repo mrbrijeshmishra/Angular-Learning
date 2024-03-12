@@ -1,0 +1,7 @@
+<h1>Learning Events</h1>
+<button (click)="getData('Hello')">Click</button> <br> <br>
+<input type="text" #box (keyup)="getData(box.value)" placeholder="Event Keyup">
+<br> <br>
+<input type="text" #box1 (keydown)="getData(box1.value)" placeholder="Event Keydown or Keypress">
+<br> <br>
+<input type="text" #box2 (blur)="getData(box2.value)" placeholder="Event Keydown or Keypress">
