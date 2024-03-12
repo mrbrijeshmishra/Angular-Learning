@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+
+<!-- <ul>
+  <li *ngFor="let user of users">
+    {{user.login}} : {{user.id}}
+  </li>
+</ul> -->
+<app-footer></app-footer>
+
+<form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+  <input type="text" name="login" ngModel placeholder="Enter login user name">
+  <br> <br>
+  <input type="number" name="id" ngModel placeholder="Enter id">
+  <br><br>
+  <button>Add Record</button>
+</form>
