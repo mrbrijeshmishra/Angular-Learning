@@ -1,0 +1,21 @@
+<form #basicForm="ngForm" (ngSubmit)="getData(basicForm.value)">
+    <input type="text" name="user" placeholder="Enter Username" ngModel> <br> <br>
+    <input type="email" name="email" placeholder="Enter email" ngModel> <br> <br>
+    <input type="password" name="password" placeholder="Enter password" ngModel> <br> <br>
+    <input type="tel" placeholder="Enter Number" name="mobile" pattern="[6-9][0-9]{9}"  ngModel> <br><br>   
+    <label for="male">Male</label>
+    <input type="checkbox" name="male" id="male" ngModel> &nbsp;&nbsp;
+    <label for="female">Female</label>
+    <input type="checkbox" name="female" id="female" ngModel> <br><br>
+    <label for="rmale">Male</label>
+    <input type="radio" name="rfemale" value="rmale" id="rmale" ngModel> &nbsp;&nbsp;
+    <label for="rfemale">Female</label>
+    <input type="radio" name="rfemale" value="female" id="rfemale" ngModel> <br><br>
+    <input type="date" name="date" id="date" ngModel> <br> <br>
+    <input type="color" name="colour" id="colour"> <br><br>
+    <button type="submit">Proceed</button>    
+</form>
+
+<ul>
+    <li>{{userData.user}}</li>
+</ul> 

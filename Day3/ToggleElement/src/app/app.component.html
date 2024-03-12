@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
+<button (click)="toggle()">Click</button>
+<h1 *ngIf="display">Heading Tag</h1>
+
+<!-- To install bootstrap itself and it adds route itself 
+write ng add @ng-bootstrap/ng-bootstrap
+it will add bootstrap in directories.
+
+open website https://ng-bootstrap.github.io/#/home
+everything of bootstrap to use in angular
+-->
