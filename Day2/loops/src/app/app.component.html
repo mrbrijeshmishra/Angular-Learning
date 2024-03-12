@@ -1,0 +1,27 @@
+<h1>{{title}}</h1>
+
+<div>
+  <p *ngFor="let item of users;">
+    User: {{item}}
+  </p>
+</div>
+
+<table border=2px;>
+  <tr>
+    <th>Book Name</th>
+    <th>Author</th>
+  </tr>
+    <tr *ngFor="let item of books">
+      <td>{{item.name}}</td>
+      <td>{{item.author}}</td>
+      <!-- <td>{{item['social account']}}</td> -->
+    </tr>
+</table>
+
+
+<ul *ngFor="let auth of books">
+  <ul *ngFor="let item of auth.socialAccount">
+    <li>{{item}}</li>
+  </ul>
+</ul>
+<!-- console.log("{{auth}}") -->
