@@ -1,0 +1,26 @@
+<!-- <h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title }}</h1> -->
+
+<h1>{{capString(title)}}</h1>
+
+<h2>{{today | date}}</h2>
+<h2>{{today | date : 'fullDate'}}</h2>
+
+<hr>
+
+<h1>{{title | slice : 2:8}}</h1>
+<h1>{{title | slice : 2:12 | uppercase}}</h1>
+
+<h2>{{user | json | uppercase}}</h2>
+
+<h2>{{000002000.3000 | number : "2.2"}}</h2>
+<h2>{{000002000.3000 | number : "8.2"}}</h2>
+<h2>{{000002000.3000 | number : "2.3-5"}}</h2>
+<h2>{{20 | currency : 'INR'}}</h2>
+
+<hr>
+
+<h1>Custom Pipes</h1>
+<!-- <h2>{{20 | usdInr}}</h2> -->
+<h2>{{20 | usdInr : 72}}</h2>
