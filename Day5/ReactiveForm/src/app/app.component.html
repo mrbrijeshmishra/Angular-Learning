@@ -1,0 +1,32 @@
+<h1>{{title}}</h1>
+
+<!-- 
+  throwing error without using getter
+  
+  <form [formGroup]="loginForm" (ngSubmit)="userLogIn()">
+  <input type="text" placeholder="Enter username" formControlName="username">
+  <br>
+  <span *ngIf="loginForm.controls['username'] && loginForm.controls['username'].invalid && loginForm.controls['username'].touched">*Field is required</span>
+  <br>
+  <input type="password" placeholder="Enter username" formControlName="password">
+  <span *ngIf="loginForm.controls['password'] && loginForm.controls['password'].invalid && loginForm.controls['password'].touched">*Field is required</span>
+  <br>
+  <button [disabled]="!loginForm.valid">Sign Up</button>
+</form>
+<br><br> 
+-->
+
+
+
+
+<form [formGroup]="loginForm" (ngSubmit)="userLogIn()">
+  <input type="text" placeholder="Enter username" formControlName="username">
+  <br>
+  <span *ngIf="user && user.invalid && user.touched">*Field is required</span>
+  <br>
+  <input type="password" placeholder="Enter username" formControlName="password">
+  <br>
+  <span *ngIf="pass && pass.invalid && pass.touched">*Field is required</span>
+  <br>
+  <button [disabled]="!loginForm.valid">Sign Up</button>
+</form>

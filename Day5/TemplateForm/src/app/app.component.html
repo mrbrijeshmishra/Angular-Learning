@@ -1,0 +1,12 @@
+<h1>{{title}}</h1>
+
+<form #loginForm="ngForm" (ngSubmit)="userLogIn(loginForm.value)">
+  <input type="text" placeholder="Enter username" name="name" ngModel required>
+  <br><br>
+  <input type="password" placeholder="Enter password" name="password" id="password" ngModel required>
+  <br><br>
+  <button type="submit" [disabled]="!loginForm.valid">Login</button>
+</form>
+<!-- <button (click)="userLogIn(loginForm.value)">Outside Form</button> -->
+
+<!-- To use validation field must be required else it will not work -->
