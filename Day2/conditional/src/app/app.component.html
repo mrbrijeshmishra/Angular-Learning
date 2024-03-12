@@ -1,0 +1,39 @@
+<h1>{{title}}</h1>
+
+<!-- <h1 *ngIf="show; then thenBlock; else elseBlock">
+  Learnig  If Else
+</h1>
+
+<button *ngIf="show; then thenBlock; else elseBlock">Click</button>
+
+<ng-template #thenBlock>
+  <h1>If Condition</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1>Else Condition</h1>
+</ng-template> -->
+
+<!-- Now if else if and else -->
+
+<!-- <ng-template [ngIf]="color==='red'">
+  <h1 style="color: red;">Red Colour</h1>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+  <h1 style="color: green;">Red Colour</h1>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+  <h1 style="color: blue;">Red Colour</h1>
+</ng-template> -->
+
+<!-- There is no else if in angular -->
+
+<!-- Switch Cases -->
+
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'" style="color: red;">Red Color</h1>
+  <h1 *ngSwitchCase="'green'" style="color: green;">Red Color</h1>
+  <h1 *ngSwitchCase="'orange'" style="color: orange;">Red Color</h1>
+  <h1 *ngSwitchCase="'blue'" style="color: blue;">Red Color</h1>
+  <h1 *ngSwitchDefault>Default Case</h1>
+</div>
